@@ -1,0 +1,298 @@
+/* ===========================
+   WEATHER CARD
+=========================== */
+
+.weather-card{
+
+    width:100%;
+    max-width:900px;
+
+    margin:auto;
+
+    padding:35px;
+
+    border-radius:28px;
+
+    background:rgba(255,255,255,.12);
+
+    backdrop-filter:blur(22px);
+
+    border:1px solid rgba(255,255,255,.15);
+
+    box-shadow:
+        0 15px 45px rgba(0,0,0,.30);
+
+    display:grid;
+
+    grid-template-columns:280px 1fr;
+
+    gap:35px;
+
+    transition:
+        transform .35s ease,
+        box-shadow .35s ease;
+}
+
+/* ===========================
+   HOVER
+=========================== */
+
+.weather-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:
+        0 22px 60px rgba(0,0,0,.38);
+
+}
+
+/* ===========================
+   LEFT SIDE
+=========================== */
+
+.weather-left{
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    border-right:
+        1px solid rgba(255,255,255,.12);
+
+    padding-right:30px;
+
+}
+
+/* ===========================
+   WEATHER ICON
+=========================== */
+
+.weather-icon{
+
+    width:120px;
+
+    height:120px;
+
+    animation:float 4s ease-in-out infinite;
+
+}
+
+/* ===========================
+   TEMPERATURE
+=========================== */
+
+.temperature{
+
+    font-size:4.8rem;
+
+    font-weight:700;
+
+    margin:10px 0;
+
+    line-height:1;
+
+}
+
+/* ===========================
+   FEELS LIKE
+=========================== */
+
+.feels-like{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:8px;
+
+    color:#d1d5db;
+
+    font-size:1rem;
+
+}
+
+/* ===========================
+   RIGHT SIDE
+=========================== */
+
+.weather-right{
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+}
+
+/* ===========================
+   CONDITION
+=========================== */
+
+.condition{
+
+    font-size:2rem;
+
+    margin-bottom:18px;
+
+    font-weight:600;
+
+}
+
+/* ===========================
+   LOCATION
+=========================== */
+
+.location{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    color:#e5e7eb;
+
+    margin-bottom:12px;
+
+    font-size:1.05rem;
+
+}
+
+/* ===========================
+   UPDATED
+=========================== */
+
+.updated{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:8px;
+
+    color:#cbd5e1;
+
+    margin-bottom:28px;
+
+    font-size:.95rem;
+
+}
+
+/* ===========================
+   WEATHER FOOTER
+=========================== */
+
+.weather-footer{
+
+    grid-column:1/-1;
+
+    margin-top:25px;
+
+    padding-top:20px;
+
+    border-top:
+        1px solid rgba(255,255,255,.15);
+
+    display:flex;
+
+    justify-content:space-between;
+
+}
+
+/* ===========================
+   FOOTER ITEM
+=========================== */
+
+.footer-item{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:8px;
+
+    color:#d1d5db;
+
+    font-size:.95rem;
+
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media(max-width:850px){
+
+    .weather-card{
+
+        grid-template-columns:1fr;
+
+        text-align:center;
+
+    }
+
+    .weather-left{
+
+        border-right:none;
+
+        border-bottom:
+            1px solid rgba(255,255,255,.12);
+
+        padding-right:0;
+
+        padding-bottom:25px;
+
+    }
+
+    .weather-right{
+
+        align-items:center;
+
+    }
+
+    .weather-footer{
+
+        flex-direction:column;
+
+        gap:15px;
+
+        align-items:center;
+
+    }
+
+}
+
+@media(max-width:500px){
+
+    .weather-card{
+
+        padding:25px;
+
+    }
+
+    .temperature{
+
+        font-size:4rem;
+
+    }
+
+    .condition{
+
+        font-size:1.6rem;
+
+    }
+
+    .weather-icon{
+
+        width:95px;
+
+        height:95px;
+
+    }
+
+}

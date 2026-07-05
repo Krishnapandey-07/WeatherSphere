@@ -1,0 +1,180 @@
+/* ===================================
+   DETAILS SECTION
+=================================== */
+
+.details-section {
+
+    width: 100%;
+
+    margin-top: 40px;
+
+}
+
+.details-title {
+
+    text-align: center;
+
+    font-size: 1.6rem;
+
+    font-weight: 600;
+
+    margin-bottom: 25px;
+
+    letter-spacing: .5px;
+
+    color: white;
+
+}
+
+
+/* ===================================
+   DETAILS GRID
+=================================== */
+
+.weather-details {
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 18px;
+
+}
+
+
+/* ===================================
+   DETAIL CARD
+=================================== */
+
+.detail-card {
+
+    background: rgba(255,255,255,.08);
+
+    backdrop-filter: blur(18px);
+
+    border: 1px solid rgba(255,255,255,.12);
+
+    border-radius: 20px;
+
+    padding: 24px 18px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+
+    transition:
+        transform .35s ease,
+        background .35s ease,
+        box-shadow .35s ease;
+
+    cursor: pointer;
+
+}
+
+
+/* ===================================
+   HOVER EFFECT
+=================================== */
+
+.detail-card:hover {
+
+    transform:
+        translateY(-8px)
+        scale(1.03);
+
+    background: rgba(255,255,255,.15);
+
+    box-shadow:
+        0 12px 30px rgba(0,0,0,.25);
+
+}
+
+
+/* ===================================
+   ICON
+=================================== */
+
+.detail-icon {
+
+    color: #38bdf8;
+
+    margin-bottom: 14px;
+
+    transition: .35s;
+
+}
+
+.detail-card:hover .detail-icon {
+
+    transform: scale(1.15);
+
+    color: #7dd3fc;
+
+}
+
+
+/* ===================================
+   TITLE
+=================================== */
+
+.detail-title {
+
+    color: #d1d5db;
+
+    font-size: .95rem;
+
+    margin-bottom: 8px;
+
+}
+
+
+/* ===================================
+   VALUE
+=================================== */
+
+.detail-value {
+
+    font-size: 1.4rem;
+
+    font-weight: 700;
+
+    color: white;
+
+}
+
+
+/* ===================================
+   RESPONSIVE
+=================================== */
+
+@media(max-width:900px){
+
+    .weather-details{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+}
+
+@media(max-width:600px){
+
+    .weather-details{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .detail-card{
+
+        padding:20px;
+
+    }
+
+}

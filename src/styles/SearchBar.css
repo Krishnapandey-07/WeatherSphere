@@ -1,0 +1,293 @@
+/* ===========================
+   SEARCH WRAPPER
+=========================== */
+
+.search-wrapper{
+    width:100%;
+    display:flex;
+    justify-content:center;
+    margin-bottom:45px;
+    animation:fadeUp .8s ease;
+}
+
+
+/* ===========================
+   SEARCH CONTAINER
+=========================== */
+
+.search-container{
+
+    width:100%;
+    max-width:900px;
+
+    display:flex;
+    align-items:center;
+    gap:16px;
+
+}
+
+
+/* ===========================
+   INPUT BOX
+=========================== */
+
+.input-box{
+
+    flex:1;
+
+    display:flex;
+    align-items:center;
+
+    background:rgba(255,255,255,.12);
+
+    backdrop-filter:blur(18px);
+
+    border:1px solid rgba(255,255,255,.15);
+
+    border-radius:18px;
+
+    padding:0 18px;
+
+    transition:.35s;
+
+    box-shadow:
+    0 10px 30px rgba(0,0,0,.25);
+
+}
+
+.input-box:hover{
+
+    background:rgba(255,255,255,.16);
+
+}
+
+.input-box:focus-within{
+
+    border-color:#38bdf8;
+
+    box-shadow:
+
+    0 0 0 4px rgba(56,189,248,.18),
+
+    0 15px 35px rgba(0,0,0,.30);
+
+}
+
+
+/* ===========================
+   SEARCH ICON
+=========================== */
+
+.input-icon{
+
+    color:#d1d5db;
+
+    margin-right:12px;
+
+    flex-shrink:0;
+
+}
+
+
+/* ===========================
+   INPUT
+=========================== */
+
+.input-box input{
+
+    width:100%;
+
+    border:none;
+
+    outline:none;
+
+    background:transparent;
+
+    color:white;
+
+    font-size:17px;
+
+    padding:18px 0;
+
+}
+
+.input-box input::placeholder{
+
+    color:rgba(255,255,255,.65);
+
+}
+
+.input-box input:disabled{
+
+    cursor:not-allowed;
+
+    opacity:.7;
+
+}
+
+
+/* ===========================
+   BUTTONS
+=========================== */
+
+.search-btn,
+.location-btn{
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:10px;
+
+    border:none;
+
+    border-radius:18px;
+
+    padding:17px 22px;
+
+    cursor:pointer;
+
+    color:white;
+
+    font-size:15px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+    white-space:nowrap;
+
+}
+
+
+/* ===========================
+   SEARCH BUTTON
+=========================== */
+
+.search-btn{
+
+    background:
+    linear-gradient(
+        135deg,
+        #0ea5e9,
+        #0284c7
+    );
+
+}
+
+.search-btn:hover:not(:disabled){
+
+    transform:
+    translateY(-3px)
+    scale(1.03);
+
+    box-shadow:
+    0 12px 30px rgba(14,165,233,.35);
+
+}
+
+
+/* ===========================
+   LOCATION BUTTON
+=========================== */
+
+.location-btn{
+
+    background:
+    linear-gradient(
+        135deg,
+        #10b981,
+        #059669
+    );
+
+}
+
+.location-btn:hover:not(:disabled){
+
+    transform:
+    translateY(-3px)
+    scale(1.03);
+
+    box-shadow:
+    0 12px 30px rgba(16,185,129,.35);
+
+}
+
+
+/* ===========================
+   ACTIVE
+=========================== */
+
+.search-btn:active,
+.location-btn:active{
+
+    transform:scale(.97);
+
+}
+
+
+/* ===========================
+   DISABLED
+=========================== */
+
+.search-btn:disabled,
+.location-btn:disabled{
+
+    background:#64748b;
+
+    cursor:not-allowed;
+
+    opacity:.8;
+
+    box-shadow:none;
+
+}
+
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media(max-width:900px){
+
+    .search-container{
+
+        flex-direction:column;
+
+    }
+
+    .input-box,
+    .search-btn,
+    .location-btn{
+
+        width:100%;
+
+    }
+
+}
+
+@media(max-width:600px){
+
+    .input-box{
+
+        padding:0 15px;
+
+    }
+
+    .input-box input{
+
+        font-size:16px;
+
+        padding:16px 0;
+
+    }
+
+    .search-btn,
+    .location-btn{
+
+        padding:16px;
+
+        font-size:15px;
+
+    }
+
+}

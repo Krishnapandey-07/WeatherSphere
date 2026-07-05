@@ -1,0 +1,50 @@
+.section-title {
+    margin: 20px 0;
+    color: white;
+}
+
+/* alignment options */
+.section-title.left {
+    text-align: left;
+}
+
+.section-title.center {
+    text-align: center;
+}
+
+.section-title.right {
+    text-align: right;
+}
+
+/* main title */
+.section-title h2 {
+    font-size: 22px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    margin: 0;
+    opacity: 0.95;
+}
+
+/* subtitle */
+.section-subtitle {
+    margin-top: 6px;
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.7);
+    font-weight: 400;
+}
+
+/* small smooth fade-in */
+.section-title {
+    animation: fadeIn 0.4s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(8px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

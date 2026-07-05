@@ -1,0 +1,143 @@
+/* ===========================
+   SUN INFO SECTION
+=========================== */
+
+.sun-info{
+
+    width:100%;
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:20px;
+
+    margin-top:35px;
+
+}
+
+/* ===========================
+   SUN CARD
+=========================== */
+
+.sun-card{
+
+    background:rgba(255,255,255,.10);
+
+    backdrop-filter:blur(20px);
+
+    border:1px solid rgba(255,255,255,.12);
+
+    border-radius:22px;
+
+    padding:25px 20px;
+
+    text-align:center;
+
+    transition:
+        transform .35s ease,
+        box-shadow .35s ease,
+        background .35s ease;
+
+    cursor:pointer;
+
+}
+
+/* ===========================
+   HOVER
+=========================== */
+
+.sun-card:hover{
+
+    transform:
+        translateY(-8px)
+        scale(1.03);
+
+    background:rgba(255,255,255,.16);
+
+    box-shadow:
+        0 15px 35px rgba(0,0,0,.25);
+
+}
+
+/* ===========================
+   ICON
+=========================== */
+
+.sun-icon{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    margin-bottom:15px;
+
+    color:#fbbf24;
+
+    transition:.35s;
+
+}
+
+.sun-card:hover .sun-icon{
+
+    transform:scale(1.15);
+
+    color:#fde047;
+
+}
+
+/* ===========================
+   TITLE
+=========================== */
+
+.sun-card h3{
+
+    font-size:1.05rem;
+
+    margin-bottom:12px;
+
+    font-weight:600;
+
+    color:white;
+
+}
+
+/* ===========================
+   VALUE
+=========================== */
+
+.sun-card p{
+
+    font-size:1.25rem;
+
+    font-weight:700;
+
+    color:#e2e8f0;
+
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media(max-width:1000px){
+
+    .sun-info{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+}
+
+@media(max-width:600px){
+
+    .sun-info{
+
+        grid-template-columns:1fr;
+
+    }
+
+}

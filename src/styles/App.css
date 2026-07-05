@@ -1,0 +1,350 @@
+/* =========================
+   GOOGLE FONT
+========================= */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+
+/* =========================
+   ROOT VARIABLES
+========================= */
+
+:root{
+
+    --primary:#38bdf8;
+    --secondary:#0f172a;
+    --text:#ffffff;
+    --text-light:#d1d5db;
+
+    --shadow:
+    0 12px 35px rgba(0,0,0,.35);
+
+}
+
+
+/* =========================
+   GLOBAL
+========================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"Poppins",sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    min-height:100vh;
+
+    background:
+    linear-gradient(135deg,#0f172a,#1e293b);
+
+    color:var(--text);
+
+    overflow-x:hidden;
+}
+
+#root{
+    min-height:100vh;
+}
+
+
+/* =========================
+   APP
+========================= */
+
+.app{
+
+    position:relative;
+    z-index:1;
+
+    min-height:100vh;
+
+    display:flex;
+    justify-content:flex-start;
+    align-items:center;
+    flex-direction:column;
+
+    padding:40px 20px;
+
+    transition:
+    background .7s ease,
+    color .4s ease;
+
+}
+
+
+/* =========================
+   CONTAINER
+========================= */
+
+.container{
+
+    width:min(1200px,100%);
+    margin:auto;
+
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero{
+
+    text-align:center;
+
+    margin-bottom:45px;
+
+    animation:fadeUp .8s ease;
+
+}
+
+.hero-icon{
+
+    font-size:72px;
+
+    margin-bottom:12px;
+
+    animation:float 4s ease-in-out infinite;
+
+}
+
+.hero h1{
+
+    font-size:4.2rem;
+
+    font-weight:700;
+
+    letter-spacing:2px;
+
+    line-height:1.1;
+
+    background:
+    linear-gradient(
+        90deg,
+        #ffffff,
+        var(--primary)
+    );
+
+    background-clip:text;
+    -webkit-background-clip:text;
+
+    color:transparent;
+    -webkit-text-fill-color:transparent;
+
+}
+
+.hero p{
+
+    margin-top:14px;
+
+    color:var(--text-light);
+
+    font-size:1.15rem;
+
+    line-height:1.6;
+
+}
+
+
+/* =========================
+   SECTIONS
+========================= */
+
+.section{
+
+    margin:75px 0;
+
+    animation:fadeUp .8s ease;
+
+}
+
+
+/* =========================
+   WEATHER BACKGROUNDS
+========================= */
+
+.default-bg{
+
+    background:
+    linear-gradient(
+        135deg,
+        #0f172a,
+        #1e293b
+    );
+
+}
+
+.sunny{
+
+    background:
+    linear-gradient(
+        135deg,
+        #f59e0b,
+        #fbbf24,
+        #fde68a
+    );
+
+}
+
+.cloudy{
+
+    background:
+    linear-gradient(
+        135deg,
+        #475569,
+        #64748b,
+        #94a3b8
+    );
+
+}
+
+.rainy{
+
+    background:
+    linear-gradient(
+        135deg,
+        #0f172a,
+        #1d4ed8,
+        #2563eb
+    );
+
+}
+
+.snowy{
+
+    background:
+    linear-gradient(
+        135deg,
+        #dbeafe,
+        #f8fafc,
+        #ffffff
+    );
+
+    color:#0f172a;
+
+}
+
+
+/* =========================
+   ANIMATIONS
+========================= */
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+        transform:translateY(30px);
+
+    }
+
+    to{
+
+        opacity:1;
+        transform:translateY(0);
+
+    }
+
+}
+
+@keyframes float{
+
+    0%{
+
+        transform:translateY(0);
+
+    }
+
+    50%{
+
+        transform:translateY(-10px);
+
+    }
+
+    100%{
+
+        transform:translateY(0);
+
+    }
+
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media(max-width:992px){
+
+    .hero h1{
+
+        font-size:3.3rem;
+
+    }
+
+}
+
+@media(max-width:768px){
+
+    .app{
+
+        padding:30px 16px;
+
+    }
+
+    .hero{
+
+        margin-bottom:30px;
+
+    }
+
+    .hero h1{
+
+        font-size:2.7rem;
+
+    }
+
+    .hero p{
+
+        font-size:1rem;
+
+        padding:0 15px;
+
+    }
+
+    .hero-icon{
+
+        font-size:60px;
+
+    }
+
+    .section{
+
+        margin:55px 0;
+
+    }
+
+}
+
+@media(max-width:480px){
+
+    .hero h1{
+
+        font-size:2.2rem;
+
+    }
+
+    .hero-icon{
+
+        font-size:52px;
+
+    }
+
+}

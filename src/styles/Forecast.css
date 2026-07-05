@@ -1,0 +1,51 @@
+/* ===========================
+   FORECAST SECTION
+=========================== */
+
+.forecast-section {
+
+    width: 100%;
+
+    margin-top: 35px;
+
+}
+
+/* ===========================
+   FORECAST GRID
+=========================== */
+
+.forecast-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+
+    width: 100%;
+
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media (max-width: 900px) {
+
+    .forecast-grid {
+
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .forecast-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+}
