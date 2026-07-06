@@ -70,7 +70,7 @@ npm run dev
 
 ### 🌤️ Weather Details
 
-![Weather Details](screenshots/pune-check.png)
+![Weather Details](screenshots/Pune-check.png)
 ![Weather Details](screenshots/check.png)
 ![Weather Details](screenshots/check2.png)
 ### 🔍 Search Another City
