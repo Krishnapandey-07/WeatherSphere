@@ -62,7 +62,20 @@ npm run dev
 
 ## 📸 Preview
 
-(Add screenshots here)
+## 📸 Screenshots
+
+### 🏠 Home Screen
+
+![Home Screen](screenshots/home.png)
+
+### 🌤️ Weather Details
+
+![Weather Details](screenshots/pune-check.png , check.png and check2.png)
+
+### 🔍 Search Another City
+
+![Search Result](screenshots/another-city.png)
+
 
 ---
 
