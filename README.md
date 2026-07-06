@@ -1,16 +1,88 @@
-# React + Vite
+# 🌦️ WeatherSphere
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern and responsive weather application built with React that provides real-time weather information, 3-day forecasts, geolocation support, and beautiful weather-based animations.
 
-Currently, two official plugins are available:
+## 🚀 Live Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+🔗 https://weathersphere-app.vercel.app
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## ✨ Features
 
-## Expanding the ESLint configuration
+- 🌍 Search weather by city
+- 📍 Detect current location
+- 🌤 Real-time weather information
+- 📅 3-Day Weather Forecast
+- 🌅 Sunrise & Sunset timings
+- 💨 Wind Speed
+- 💧 Humidity
+- 🌡 Feels Like Temperature
+- 👁 Visibility
+- 🎨 Dynamic Weather Animations
+- 📱 Fully Responsive Design
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🛠 Tech Stack
+
+- React
+- Vite
+- JavaScript
+- CSS3
+- OpenWeather API
+- HTML5
+
+---
+
+## 📂 Project Structure
+
+src/
+├── components/
+├── styles/
+├── services/
+├── assets/
+└── App.jsx
+
+---
+
+## ⚙️ Installation
+
+```bash
+git clone https://github.com/Krishnapandey-07/WeatherSphere.git
+
+cd WeatherSphere
+
+npm install
+
+npm run dev
+```
+
+---
+
+## 📸 Preview
+
+(Add screenshots here)
+
+---
+
+## 🔮 Future Improvements
+
+- 7-Day Forecast
+- Hourly Forecast
+- Air Quality Index
+- Dark / Light Mode
+- Weather Maps
+- Favorite Cities
+
+---
+
+## 👨‍💻 Developer
+
+Krishna Pandey
+
+B.Tech CSE (AI)
+Vedam School of Technology
+
+GitHub:
+https://github.com/Krishnapandey-07
