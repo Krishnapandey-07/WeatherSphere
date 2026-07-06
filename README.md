@@ -66,12 +66,13 @@ npm run dev
 
 ### 🏠 Home Screen
 
-![Home Screen](screenshots/home.png)
+![Home Screen](screenshots/Home.png)
 
 ### 🌤️ Weather Details
 
-![Weather Details](screenshots/pune-check.png , check.png and check2.png)
-
+![Weather Details](screenshots/pune-check.png)
+![Weather Details](screenshots/check.png)
+![Weather Details](screenshots/check2.png)
 ### 🔍 Search Another City
 
 ![Search Result](screenshots/another-city.png)
